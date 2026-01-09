@@ -173,14 +173,23 @@ footer {
   font-size: 14px;
 }
 
-/* custom bullet */
+/* remove custom bullet */
 .participant-item::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background: #3949ab;
-  border-radius: 50%;
-  display: inline-block;
+  display: none;
+}
+
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #c62828;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* empty-state styling */
