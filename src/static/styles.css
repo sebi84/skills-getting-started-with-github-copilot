@@ -142,3 +142,61 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants {
+  margin-top: 12px;
+}
+
+.participants p {
+  margin: 0;
+  font-weight: 600;
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f1f8ff, #ffffff);
+  border: 1px solid #e3e8f5;
+  color: #12356a;
+  font-size: 14px;
+}
+
+/* remove custom bullet */
+.participant-item::before {
+  display: none;
+}
+
+.participant-delete {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #c62828;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.participant-delete:hover {
+  background: rgba(198, 40, 40, 0.08);
+}
+
+/* empty-state styling */
+.participant-item.none {
+  font-style: italic;
+  color: #666;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
